@@ -112,11 +112,11 @@ de-prod
 # Brazil
 
 [br-prod]
-prod.quitandaaberta.tk ansible_host=159.65.100.64
-quitandaaberta.tk ansible_host=159.65.100.64
+prod.quitandaaberta.tk
+quitandaaberta.tk
 
 [br-staging]
-staging.quitandaaberta.tk ansible_host=138.68.227.154
+staging.quitandaaberta.tk
 
 [br:children]
 br-prod
