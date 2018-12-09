@@ -1,0 +1,20 @@
+---
+
+domain: staging.quitandaaberta.tk
+rails_env: staging
+
+admin_email: faelbraz@gmail.com
+
+mail_domain: quitandaaberta.com.br
+
+# Optional list of subdomains to register in letsencrypt certificate
+# Defaults to {{ domain }} if list is undefined
+#
+#certbot_domains:
+#  - example.com
+#  - www.example.com
+#  - info.example.com
+
+# Size in bytes. You can also use units like 1G, 512MiB or 1000KB. See: `man fallocate`
+# The default is `false`, not installing a swapfile.
+#swapfile_size: 1G
