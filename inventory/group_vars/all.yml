@@ -100,19 +100,6 @@ unicorn_timeout: 30
 nginx_official_repo: True
 
 nginx_sites:
-  default:
-    - |
-      listen 80 default_server;
-      listen [::]:80 default_server;
-      server_name  _;
-      add_header X-Content-Type-Options nosniff always;
-      add_header X-Xss-Protection "1; mode=block" always;
-      add_header X-Frame-Options DENY always;
-      add_header Content-Security-Policy "default-src none" always;
-      location / {
-        access_log off;
-        return 444;
-      }
 
   ofn_80:
     - |
