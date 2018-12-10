@@ -112,7 +112,6 @@ de-prod
 # Brazil
 
 [br-prod]
-prod.quitandaaberta.tk
 quitandaaberta.tk
 
 [br-staging]
