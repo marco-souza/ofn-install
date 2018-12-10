@@ -5,12 +5,13 @@ country_code: BR
 currency: BRL
 locale: pt_br
 language: pt_BR.UTF8
+available_locales: br,en
 language_packages:
   - language-pack-pt-base
   - language-pack-en-base
 l10n_repo: https://github.com/marco-souza/l10n_br.git
 l10n_git_version: master
-timezone: Sao Paulo
+timezone: Brasilia
 
 # Used for the LetsEncrypt email setting
 developer_email: faelbbraz@gmail.com
