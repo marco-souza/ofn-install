@@ -175,6 +175,13 @@
     - restart unicorn
     - restart delayed job service
 
+########
+# FIXME following warning is stopping ansible playbook execution:
+# DEPRECATION WARNING: Support for Rails versions before 4.2 is deprecated and will be removed from skylight 2.0.
+#
+# QUIFIX: run seed manually and then rerun ansible playbook
+########
+
 - name: seed database
   # We run a shell script that passes the default email and password to rake with an EOF block, so we don't hang on the prompts.
   command: bash -lc "{{ config_path }}/seed.sh RAILS_ENV={{ rails_env }}"
