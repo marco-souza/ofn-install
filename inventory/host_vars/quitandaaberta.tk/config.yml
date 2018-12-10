@@ -1,6 +1,6 @@
 ---
 
-domain: prod.quitandaaberta.tk
+domain: quitandaaberta.tk
 rails_env: production
 
 admin_email: faelbraz@gmail.com
