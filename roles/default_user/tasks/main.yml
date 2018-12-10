@@ -12,3 +12,12 @@
     src: sudoers.j2
     dest: "/etc/sudoers.d/{{ user }}"
     mode: 0440
+
+- name: Set up multiple authorized keys
+  authorized_key:
+    user: "{{ user }}"
+    state: present
+    key: "{{ item }}"
+  with_file:
+    - "{{ lookup('env', 'PWD') }}/files/keys/marco.pub"
+    - "{{ lookup('env', 'PWD') }}/files/keys/rafael.pub"
